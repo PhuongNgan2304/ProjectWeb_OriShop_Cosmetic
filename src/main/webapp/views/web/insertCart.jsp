@@ -11,7 +11,7 @@
 		<label>Nhập code giỏ hàng: </label>
 		<input type="text" placeholder="Nhập code giỏ hàng" name="cart_code">
 		
-		<input type="submit" value="insert cart">
+		<button type="submit" >Insert Cart</button> 
 	</form>
 </body>
 </html>

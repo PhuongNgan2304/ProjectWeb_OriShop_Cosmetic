@@ -79,8 +79,13 @@ public class WEB_Cart_ProductController extends HttpServlet {
 
 		}
 		String cartid = req.getParameter("CartId");
-		int totalPrice = cpDAO.calculateTotalPrice(Integer.parseInt(cartid));
-		req.setAttribute("totalPrice", totalPrice);
+		List<Cart_Product> cart_product = cpDAO.findCart_ProductByCartID(Integer.parseInt(cartid));
+		int total = 0;
+		for(Cart_Product cp : cart_product) {
+			total += cp.getTotalPrice();
+		}
+		req.setAttribute("totalPrice", total);
+		
 		findAll(req, resp);
 		RequestDispatcher rd = req.getRequestDispatcher("/views/web/list-cart.jsp");
 		rd.forward(req, resp);

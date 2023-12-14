@@ -40,7 +40,7 @@
 								
 										<span class="input-group-addon"><i class="fa fa-user"></i></span>
 										<input type="text" placeholder="Tài khoản" name="user"
-											class="form-control" value="${user.username}">
+											class="form-control" value="${user.Username}">
 									</div>
 									</label>
 									
