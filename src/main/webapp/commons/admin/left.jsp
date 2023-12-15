@@ -97,7 +97,15 @@
 						</a>
 						
 					</li>
-					
+					<li class="${tag=='statics'?'active open':''}">
+						<a href="<c:url value="/admin-Statics"></c:url>">
+						<i class="icon-basket"></i>
+						<span class="title">Statics</span>
+						<span class="${tag=='statics'?'selected':''}"></span>
+						<span class="arrow ${tag=='statics'?'open':''}"></span>
+						</a>
+						
+					</li>
 				</ul>
 				<!-- END SIDEBAR MENU -->
 			</div>

@@ -23,7 +23,7 @@
 		<properties>
 
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:sqlserver://localhost:1433;instanceName=SQLEXPRESS;databaseName=Cosmetic" />
+				value="jdbc:sqlserver://localhost:1433;instanceName=SQLEXPRESS;databaseName= Cosmetic" />
 
 			<property name="javax.persistence.jdbc.user" value="sa" />
 
